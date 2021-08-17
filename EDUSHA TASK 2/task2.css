@@ -1,0 +1,83 @@
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgb(20, 20, 70), rgb(63, 158, 187) ); 
+    width:100vw;
+    height:100vh;
+    
+  }
+  .center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   
+  }
+  .center button {
+    padding:10px 20px;
+    background:#fff;
+    color:#222;
+    border:1px solid #222;
+    outline:none;
+    border-radius:20px;
+    font-size:16px;
+    color:rgb(20, 20, 70);
+    font-weight: bold;
+    box-shadow: 1px 1px 15px black;
+  }
+  .pop {
+    position:absolute;
+    top:-150%;
+    left:50%;
+    transform:translate(-50%,-50%) ;
+    text-align:center;
+    opacity:0;
+    width:35vw;
+    background:#fff;
+    border-radius:5px;
+    box-shadow:5px 5px 20px black;
+    
+  }
+  .pop.active {
+    top:50%;
+    opacity:1;
+    transform:translate(-50%,-50%) ;
+
+  }
+  .icon img
+{
+    height:60px;
+    width:60px;
+
+}
+  .pop .head {
+    padding:30px;
+    text-align:center;
+   color: rgb(20, 20, 70);
+  }
+  .pop .head h2 {
+    font-size:25px;
+    margin-bottom:20px;
+
+  }
+  .pop .head p {
+    font-size:15px;
+    
+    margin-bottom:25px;
+  }
+  .pop .head .close-button {
+    padding:10px 20px;
+    color:black;
+    border:1px solid black;
+    background: linear-gradient(rgb(20, 20, 70), rgb(63, 158, 187) ); 
+    border-radius:20px;
+    font-size:20px;
+    font-weight: bold;
+    cursor:pointer;
+    outline:none;
+  }
